@@ -7,13 +7,32 @@ import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import MyBlock from './myblock/myblock';
-import CKEditorInspector from '@ckeditor/ckeditor5-inspector';                 // ADDED
+import MyBlock from './src/myblock';
+import MyBlockToolbar from './src/myblocktoolbar';
+import MyBlockStyle from './src/myblockstyle';
+import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
 ClassicEditor
     .create( document.querySelector( '#editor' ), {
-        plugins: [ Essentials, Paragraph, Heading, List, Bold, Italic, MyBlock ],
-        toolbar: [ 'heading', 'bold', 'italic', 'numberedList', 'bulletedList', 'MyBlock' ]
+        plugins: [ Essentials, Paragraph, Heading, List, Bold, Italic, MyBlock, MyBlockStyle, MyBlockToolbar ],
+        toolbar: [ 
+          'heading', 
+          'bold', 
+          'italic', 
+          'numberedList', 
+          'bulletedList', 
+          'myblock', 
+        ],
+        myBlock: {
+          toolbar: [ 
+            'myBlockStyle:awasete',
+            'myBlockStyle:waku',
+          ],
+          styles: [
+            'awasete',
+            'waku'
+          ]
+        }
     } )
     .then( editor => {
         console.log( 'Editor was initialized', editor );
