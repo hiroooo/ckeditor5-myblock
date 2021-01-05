@@ -8,7 +8,6 @@ const defaultStyles = {
 	awasete: {
 		name: 'awasete',
 		title: 'あわせて読みたい',
-		isDefault: true,
 		className: 'awasete'
 	},
 
@@ -17,6 +16,13 @@ const defaultStyles = {
 		title: '枠',
 		icon: rightIcon,
 		className: 'waku'
+	},
+
+	kokuban: {
+		name: 'kokuban',
+		title: '黒板',
+		icon: rightIcon,
+		className: 'kokuban'
 	},
 
 };

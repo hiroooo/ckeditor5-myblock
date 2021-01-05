@@ -1,0 +1,59 @@
+:root {
+	--ck-image-style-spacing: 1.5em;
+}
+
+.ck-content {
+	& .image-style-side {
+		float: right;
+		margin-left: var(--ck-image-style-spacing);
+		max-width: 50%;
+	}
+
+	& .image-style-align-left {
+		float: left;
+		margin-right: var(--ck-image-style-spacing);
+	}
+
+	& .image-style-align-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	& .image-style-align-right {
+		float: right;
+		margin-left: var(--ck-image-style-spacing);
+	}
+
+}
+
+.kokuban {
+  position: relative;
+  margin: 2em auto;
+  padding: 1em;
+  background: #1e1e1a;
+  border: 7px solid rgba(238,117,30,.6);
+  border-radius: 3px;
+  box-shadow: 0 0 5px #333;
+}
+.kokuban >* {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.kokuban:before {
+  width: 20px;
+  right: 10px;
+  border: 3px solid #419acf;
+  border-radius: 3px 2px 0 2px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+}
+.kokuban:after {
+  width: 15px;
+  right: 45px;
+  border: 3px solid #fff;
+  border-radius: 8px 5px 2px 5px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+}

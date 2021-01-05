@@ -1,9 +1,11 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
+
 import { normalizeImageStyles } from './utils';
 
-import '../../theme/imagestyle.css';
+// css
+import '../../theme/myblockstyle.css';
 
 export default class MyBlockStyleUI extends Plugin {
 	static get pluginName() {
@@ -14,7 +16,6 @@ export default class MyBlockStyleUI extends Plugin {
 		const t = this.editor.t;
 
 		return {
-			'Full size image': t( 'Full size image' ),
 			'Side image': t( 'Side image' ),
 			'Left aligned image': t( 'Left aligned image' ),
 			'Centered image': t( 'Centered image' ),
@@ -26,9 +27,7 @@ export default class MyBlockStyleUI extends Plugin {
 		const editor = this.editor;
 		const configuredStyles = editor.config.get( 'myBlock.styles' );
 
-    console.log("consigurestyles", configuredStyles);
 		const translatedStyles = translateStyles( normalizeImageStyles( configuredStyles ), this.localizedDefaultStylesTitles );
-    console.log("translatedStyles", translatedStyles);
 
 		for ( const style of translatedStyles ) {
 			this._createButton( style );

@@ -14,10 +14,9 @@ export default class MyBlockStyleEditing extends Plugin {
 		const data = editor.data;
 		const editing = editor.editing;
 
-		editor.config.define( 'myBlock.styles', [ 'awasete', 'waku' ] );
+		editor.config.define( 'myBlock.styles', [ 'waku', 'kokuban' ] );
 
 		const styles = normalizeImageStyles( editor.config.get( 'myBlock.styles' ) );
-    console.log(styles, "styles");
 
 		schema.extend( 'myBlock', { allowAttributes: 'myBlockStyle' } );
 

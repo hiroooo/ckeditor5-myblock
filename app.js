@@ -25,12 +25,12 @@ ClassicEditor
         ],
         myBlock: {
           toolbar: [ 
-            'myBlockStyle:awasete',
             'myBlockStyle:waku',
+            'myBlockStyle:kokuban',
           ],
           styles: [
-            'awasete',
-            'waku'
+            'waku',
+            'kokuban'
           ]
         }
     } )
