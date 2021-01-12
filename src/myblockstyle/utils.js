@@ -15,7 +15,8 @@ const defaultStyles = {
 		name: 'waku',
 		title: '枠',
 		icon: rightIcon,
-		className: 'waku'
+		className: 'waku',
+    isDefault: true
 	},
 
 	kokuban: {
