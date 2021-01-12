@@ -27,10 +27,12 @@ ClassicEditor
           toolbar: [ 
             'myBlockStyle:waku',
             'myBlockStyle:kokuban',
+            'myBlockStyle:awasete',
           ],
           styles: [
             'waku',
-            'kokuban'
+            'kokuban',
+            'awasete'
           ]
         }
     } )
