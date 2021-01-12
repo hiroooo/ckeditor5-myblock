@@ -5,12 +5,6 @@ import rightIcon from '@ckeditor/ckeditor5-core/theme/icons/object-right.svg';
 import { logWarning } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
 
 const defaultStyles = {
-	awasete: {
-		name: 'awasete',
-		title: 'あわせて読みたい',
-		className: 'awasete'
-	},
-
 	waku: {
 		name: 'waku',
 		title: '枠',
@@ -18,14 +12,17 @@ const defaultStyles = {
 		className: 'waku',
     isDefault: true
 	},
-
 	kokuban: {
 		name: 'kokuban',
 		title: '黒板',
 		icon: rightIcon,
 		className: 'kokuban'
 	},
-
+	awasete: {
+		name: 'awasete',
+		title: 'あわせて読みたい',
+		className: 'awasete'
+	},
 };
 
 const defaultIcons = {
