@@ -8,14 +8,11 @@ const defaultStyles = {
 	waku: {
 		name: 'waku',
 		title: '枠',
-		icon: rightIcon,
 		className: 'waku',
-    isDefault: true
 	},
 	kokuban: {
 		name: 'kokuban',
 		title: '黒板',
-		icon: rightIcon,
 		className: 'kokuban'
 	},
 	awasete: {
