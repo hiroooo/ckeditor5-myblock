@@ -45,5 +45,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hiroooo/ckeditor5-myblock.git"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-editor-classic": "^24.0.0"
   }
 }

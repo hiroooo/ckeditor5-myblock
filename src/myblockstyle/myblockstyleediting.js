@@ -26,7 +26,7 @@ export default class MyBlockStyleEditing extends Plugin {
 		data.downcastDispatcher.on( 'attribute:myBlockStyle:myBlock', modelToViewConverter );
 
 		// Converter for figure element from view to model.
-		data.upcastDispatcher.on( 'element:figure', viewToModelStyleAttribute( styles ), { priority: 'low' } );
+		data.upcastDispatcher.on( 'element:section', viewToModelStyleAttribute( styles ), { priority: 'low' } );
 
 		// Register imageStyle command.
 		editor.commands.add( 'myBlockStyle', new MyBlockStyleCommand( editor, styles ) );

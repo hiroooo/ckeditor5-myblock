@@ -12,8 +12,6 @@ export default class MyBlockEditing extends Plugin {
     }
 
     init() {
-        console.log( 'SimpleBoxEditing#init() got called' );
-
         this._defineSchema();                                                  // ADDED
         this._defineConverters();                                              // ADDED
         this.editor.commands.add( 'insertMyBlock', new InsertMyBlockCommand( this.editor ) );
@@ -62,6 +60,7 @@ export default class MyBlockEditing extends Plugin {
         const conversion = this.editor.conversion;
 
         // <myBlock> converters
+        // これをimageのようにsectionを逆変換できるようにしたほうがいい @see https://github.com/ckeditor/ckeditor5-image/blob/master/src/image/imageediting.js
         conversion.for( 'upcast' ).elementToElement( {
             model: 'myBlock',
             view: {
