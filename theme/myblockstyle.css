@@ -57,6 +57,9 @@
   content: "";
   bottom: 0;
 }
+.kokuban .myblock-title, .kokuban .myblock-description {
+  border: 0;
+}
 
 .waku {
   padding: 10px;
