@@ -84,6 +84,7 @@
 }
 
 .waku .myblock-title.ck-editor__nested-editable {
+  min-width: 3rem;
   background-color: #666 !important;
 }
 
