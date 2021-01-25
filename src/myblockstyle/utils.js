@@ -7,18 +7,18 @@ import { logWarning } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
 const defaultStyles = {
 	waku: {
 		name: 'waku',
-		title: '枠',
+		title: '枠（見出しあり）',
 		className: 'waku',
+	},
+	waku2: {
+		name: 'waku2',
+		title: '枠（見出し無し）',
+		className: 'waku2',
 	},
 	kokuban: {
 		name: 'kokuban',
 		title: '黒板',
 		className: 'kokuban'
-	},
-	awasete: {
-		name: 'awasete',
-		title: 'あわせて読みたい',
-		className: 'awasete'
 	},
 };
 

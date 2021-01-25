@@ -61,22 +61,45 @@
   border: 0;
 }
 
+/* waku */
 .waku {
-  padding: 10px;
-  margin: 1em 0;
-
-  background: rgba( 0, 0, 0, 0.1 );
-  border: solid 1px hsl(0, 0%, 77%);
-  border-radius: 2px;
+  position: relative;
+  margin: 2em auto;
+  padding: 1em;
+  border: 1.5px solid #eee;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #333;
+  background-color: #fff;
 }
 
-.awasete {
-  padding: 10px;
-  margin: 1em 0;
+.waku .myblock-title {
+  position: absolute;
+  left: 2rem;
+  bottom: calc(100% - .8rem);
+  color: #fff;
+  font-size: .9rem;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  margin: 0;
+}
 
-  background: rgba( 0, 0, 0, 0.1 );
-  border: solid 1px hsl(0, 0%, 77%);
-  border-radius: 2px;
+.waku .myblock-title.ck-editor__nested-editable {
+  background-color: #666 !important;
+}
+
+/* waku2 */
+.waku2 {
+  position: relative;
+  margin: 2em auto;
+  padding: 1em;
+  border: 1.5px solid #eee;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #333;
+  background-color: #fff;
+}
+
+.waku2 .myblock-title {
+  display: none;
 }
 
 .myblock-title, .myblock-description {
